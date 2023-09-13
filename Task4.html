@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task4</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+      }
+      .reg_form {
+        width: 512px;
+        align-items: center;
+      }
+      .regist {
+        display: flex;
+        justify-content: start;
+        margin-bottom: 12px;
+      }
+      label {
+        flex-basis: 50%;
+      }
+      input {
+        flex-basis: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reg_form">
+      <form>
+        <div class="regist">
+          <label for="FullName">Full name:</label>
+          <input type="text" id="FullName" name="FullName" />
+        </div>
+        <div class="regist">
+          <label for="Username">Username:</label>
+          <input type="text" id="Username" name="Username" />
+        </div>
+        <div class="regist">
+          <label for="Password">Password:</label>
+          <input type="password" id="Password" name="Password" />
+        </div>
+        <div class="regist">
+          <label for="Re-enter Password">Re Password:</label>
+          <input type="password" id="ReEnterPass" name="Re-enter Password" />
+        </div>
+        <div class="regist">
+          <label for="Address">Address:</label>
+          <input type="text" id="Address" name="Address" />
+        </div>
+        <div class="regist">
+          <label for="Age">Age:</label>
+          <input type="number" id="Age" name="Age" />
+        </div>
+        <div class="regist">
+          <label for="dropdownGender">Gender:</label>
+          <select id="Gender" name="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+          </select>
+        </div>
+        <input type="submit" value="Save" />
+      </form>
+    </div>
+  </body>
+</html>
