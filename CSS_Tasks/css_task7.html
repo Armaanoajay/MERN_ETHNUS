@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Task 7</title>
+    <link rel="stylesheet" href="style7.css" />
+  </head>
+  <body>
+    <div class="reg_form">
+      <form>
+        <div class="regist">
+          <label for="FullName">Name:</label>
+          <input type="text" id="FullName" name="FullName" />
+        </div>
+        <div class="regist">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="regist">
+          <label for="Password">Password:</label>
+          <input type="password" id="Password" name="Password" />
+        </div>
+        <div class="regist">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="Phone" />
+        </div>
+        <div class="regist">
+          <label for="radioGender">Gender:</label>
+          <label for="male" class="radio-label">Male</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="female" class="radio-label">Female</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="others" class="radio-label">Others</label>
+          <input type="radio" id="others" name="gender" value="others" />
+        </div>
+        <div class="regist">
+          <label for="lang">Languages:</label>
+          <select id="Language" name="Language" aria-placeholder="">
+            <option value="" disabled selected hidden>Choose a Language</option>
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Kannada">Kannada</option>
+            <option value="Hindi">Sanskrit</option>
+            <option value="Kannada">Marathi</option>
+          </select>
+        </div>
+        <div class="regist">
+          <label for="zipcode">Zipcode:</label>
+          <input type="number" id="zipcode" name="zipcode" />
+        </div>
+        <div class="regist">
+          <label for="about">About:</label>
+          <textarea
+            id="about"
+            name="about"
+            rows="4"
+            placeholder="Write about yourself"
+          ></textarea>
+        </div>
+        <div class="endm">
+          <button class="btn" type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+.reg_form {
+  margin-top: 100px;
+  width: 512px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #a22b55;
+}
+form {
+  background-color: #75203f;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.regist {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 10px;
+}
+label {
+  flex-basis: 45%;
+}
+input {
+  flex-basis: 40%;
+}
+body {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.endm {
+  margin: auto;
+}
+.btn {
+  font-size: 25px;
+  background-color: white;
+  color: #75203f;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
