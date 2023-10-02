@@ -1,0 +1,56 @@
+.error-message {
+  color: rgb(231, 13, 13);
+  font-size: 16px;
+  margin-left: 10px;
+  display: none;
+}
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+table {
+  width: auto;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+td {
+  border: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"] {
+  width: 310px;
+}
+td#custom {
+  width: 450px;
+}
+td#ethnus {
+  text-align: right;
+}
+label {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
+.radio-label {
+  display: inline;
+  font-weight: normal;
+  color: rgb(29, 39, 1);
+}
+input#Address {
+  width: 310px;
+  height: 60px;
+}
+.center-button {
+  text-align: center;
+  margin-top: 10px;
+}
+div#registrationform {
+  padding: 30px;
+  margin: 40px;
+  margin-left: 300px;
+  margin-right: 300px;
+  background: linear-gradient(rgb(0, 255, 94), rgb(192, 213, 7), rgb(177, 88, 10));
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JTask  6</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Instagram</h2>
+      <form id="loginForm">
+        <div class="input-container">
+          <span class="icon-input">&#128100;</span>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <span class="icon-input">&#128274;</span>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <span id="loginError" class="error"></span>
+        <button type="submit">Log In</button>
+        <div class="form-options">
+          <label class="remember-me">
+            <input type="checkbox" id="rememberMe" /> Remember Me
+          </label>
+          <a class="forgot-password" href="#">Forgot Password?</a>
+        </div>
+      </form>
+    </div>
+    <div class="signup-link">
+      Don't have an account? <a href="#">Sign up here</a>
+    </div>
+
+    <script>
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+
+          var isValid = true;
+
+          if (username === "") {
+            document.getElementById("username").classList.add("invalid");
+            isValid = false;
+          } else {
+            document.getElementById("username").classList.remove("invalid");
+          }
+
+          if (password === "") {
+            document.getElementById("password").classList.add("invalid");
+            isValid = false;
+          } else {
+            document.getElementById("password").classList.remove("invalid");
+          }
+
+          if (isValid) {
+            document.getElementById("loginError").innerHTML =
+              "Login successful!";
+          } else {
+            document.getElementById("loginError").innerHTML =
+              "Please fill in all fields.";
+          }
+        });
+    </script>
+  </body>
+</html>
